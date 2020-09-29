@@ -1,0 +1,15 @@
+query Tigers {
+  organization(login: "teamtigers") {
+    name
+    email
+    description
+    membersWithRole(first: 7) {
+      edges {
+        node {
+          id
+          name
+        }
+      }
+    }
+  }
+}

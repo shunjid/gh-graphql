@@ -1,0 +1,23 @@
+{
+  repositoryOwner(login: "eveporcello") {
+    repository(name: "graph-ql-testing") {
+      issues(first: 1) {
+        edges {
+          node {
+            id
+            title
+            body
+            comments(last: 5) {
+              edges {
+                node {
+                  id
+                  body
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

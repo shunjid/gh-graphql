@@ -1,0 +1,13 @@
+{
+  repository(name:"graphql", owner:"facebook") {
+    issues(last: 5, states: OPEN) {
+      edges {
+        node {
+          id
+          title
+          author
+        }
+      }
+    }
+  }
+}

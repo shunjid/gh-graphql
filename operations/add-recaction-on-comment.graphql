@@ -1,0 +1,16 @@
+mutation NewReaction($input: AddReactionInput!) {
+  addReaction(input:$input) {
+    reaction {
+      content
+    }
+  }
+}
+
+# query
+{
+  "input": {
+    "clientMutationId": "#anyMutationId",
+    "subjectId": "#subjectIdYouGet",
+    "content": "HEART"
+  }
+}

@@ -1,0 +1,21 @@
+query Organization($login: String!, $numberOfPeopleToSee: Int!) {
+  organization(login: $login) {
+    name
+    email
+    description
+    membersWithRole(first: $numberOfPeopleToSee) {
+      edges {
+        node {
+          id
+          name
+        }
+      }
+    }
+  }
+}
+
+# query
+{
+  "login": "teamtigers",
+  "numberOfPeopleToSee": 5
+}

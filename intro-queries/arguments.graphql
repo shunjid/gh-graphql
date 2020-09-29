@@ -1,0 +1,8 @@
+{
+  repository(name: "coronainfobd", owner: "teamtigers") {
+    homepageUrl
+    diskUsage
+    createdAt
+    isArchived
+  }
+}

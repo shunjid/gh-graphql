@@ -1,0 +1,8 @@
+{
+  repositoryOwner(login: "facebook") {
+    id
+    resourcePath
+    url
+    avatarUrl
+  }
+}

@@ -1,0 +1,14 @@
+{
+  coronainfobdProject: repository(name: "coronainfobd", owner: "teamtigers") {
+    homepageUrl
+    diskUsage
+    createdAt
+    isArchived
+  }
+  donate_plasmaProject: repository(name: "donate_plasma", owner: "teamtigers") {
+    homepageUrl
+    diskUsage
+    createdAt
+    isArchived
+  }
+}

@@ -1,0 +1,15 @@
+{
+  coronainfobdProject: repository(name: "coronainfobd", owner: "teamtigers") {
+    ...repoFields
+  }
+  donate_plasmaProject: repository(name: "donate_plasma", owner: "teamtigers") {
+    ...repoFields
+  }
+}
+
+fragment repoFields on Repository {
+  homepageUrl
+  diskUsage
+  createdAt
+  isArchived
+}

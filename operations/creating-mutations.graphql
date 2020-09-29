@@ -1,0 +1,35 @@
+# we get a subject id from it
+{
+  repositoryOwner(login: "eveporcello") {
+    repository(name: "graph-ql-testing") {
+      issues(first: 1) {
+        edges {
+          node {
+            id
+            title
+            body
+          }
+        }
+      } 
+    }
+  }
+}
+
+# mutation
+mutation NewComment($input: AddCommentInput!) {
+  addComment(input: $input) {
+    clientMutationId
+    subject {
+      id
+    }
+  }
+}
+
+# query variable
+{
+  "input": {
+    "clientMutationId": "#anyMutationId",
+    "subjectId": "#subjectIdYouGet",
+    "body": "🚀🇧🇩 Mutating from GraphiQL"
+  }
+}
